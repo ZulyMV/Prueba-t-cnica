@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Utest Academy" skipped="0" tests="1" time="15.84" timestamp="2021-10-25 08:30:26"><testcase name="Registration on the Utest page"><error message="No such field co.com.choucair.certification.pruebatecnica.model.AcademyUtestData.strpassword" type="cucumber.runtime.CucumberException">No such field co.com.choucair.certification.pruebatecnica.model.AcademyUtestData.strpassword</error><system-err>No such field co.com.choucair.certification.pruebatecnica.model.AcademyUtestData.strpassword&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+</system-err></testcase></testsuite>
