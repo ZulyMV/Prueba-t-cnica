@@ -30,6 +30,6 @@ public class LastStep implements Task {
                         Click.on(UtestLastStepPage.TERM_USE),
                         Click.on(UtestLastStepPage.PRIVACY_SECURITY),
                         Click.on(UtestLastStepPage.COMPLETE_BUTTON),
-                        WaitUntil.the(UtestLastStepPage.SUCCESSFULLY_SIGNUP, WebElementStateMatchers.isVisible()).forNoMoreThan(120).seconds());
+                        WaitUntil.the(UtestLastStepPage.SUCCESSFULLY_SIGNUP, WebElementStateMatchers.isVisible()).forNoMoreThan(40).seconds());
     }
 }

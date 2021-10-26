@@ -27,8 +27,8 @@ public class ChoucairAcademyStepDefinitions {
 
     @When("^she clicks on the join today option$")
     public void sheClicksOnTheJoinTodayOption(List<AcademyUtestData> academyUtestData){
-    OnStage.theActorCalled("Zuly").wasAbleTo((
-            Join.onThePage(
+        OnStage.theActorInTheSpotlight().wasAbleTo(
+                (Join.onThePage(
                     academyUtestData.get(0).getStrfirstname(),
                     academyUtestData.get(0).getStrlastname(),
                     academyUtestData.get(0).getStremailadress(),
@@ -52,8 +52,7 @@ public class ChoucairAcademyStepDefinitions {
     }
 
     @Then("^she must fill out the form$")
-    public void sheMustFillOutTheForm(List<AcademyUtestData> academyUtestData) {
-        //List<AcademyUtestData> academyUtestData
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(AnswerPrueba.toThe(academyUtestData.get(0).getStrquestion())));
+    public void sheMustFillOutTheForm(List<String> strquestion) {
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(AnswerPrueba.toThe(strquestion.get(1))));
     }
 }

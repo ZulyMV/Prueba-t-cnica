@@ -9,6 +9,7 @@ import net.serenitybdd.screenplay.actions.Open;
 public class OpenUp implements Task{
 
     private UtestAcademyPage utestAcedemyPage;
+
     public static OpenUp thePage() {
         return Tasks.instrumented(OpenUp.class);
     }

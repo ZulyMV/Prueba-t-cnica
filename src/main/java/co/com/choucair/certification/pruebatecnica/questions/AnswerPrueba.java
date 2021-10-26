@@ -4,46 +4,23 @@ import co.com.choucair.certification.pruebatecnica.userinterface.UtestLastStepPa
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
-import net.serenitybdd.screenplay.targets.Target;
-import org.openqa.selenium.By;
 
 public class AnswerPrueba implements Question<Boolean> {
     private String strquestion;
 
-    public String getStrquestion() {
-        return strquestion;
-    }
-
-    public void setStrquestion(String strquestion) {
+    public AnswerPrueba(String strquestion) {
         this.strquestion = strquestion;
     }
 
-        public AnswerPrueba(String strquestion) {
-        this.strquestion = strquestion;
-    }
-
-    public static AnswerPrueba toThe(String question) {
-        return new AnswerPrueba(question);
+    public static AnswerPrueba toThe(String strquestion) {
+        return new AnswerPrueba(strquestion);
     }
 
     @Override
     public Boolean answeredBy(Actor actor) {
-        boolean result;
-        String Sucess;
-        Target SUCCESSFULLY_SIGNUP=Target.the("").
-                        located(By.xpath("//h1"));
-        try {
-            Sucess= Text.of(UtestLastStepPage.SUCCESSFULLY_SIGNUP).viewedBy(actor).asString();
-        }catch (Exception excepcion){
-            return true;
-        }
 
-        if(strquestion.equals(SUCCESSFULLY_SIGNUP)){
-            result=false;
-        }else{
-            result=true;
-        }
-        return result;
+        String AnswerPrueba = Text.of(UtestLastStepPage.SUCCESSFULLY_SIGNUP).viewedBy(actor).asString();
+        return (strquestion.equals(AnswerPrueba))? true : false;
     }
 
     @Override

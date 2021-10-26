@@ -16,13 +16,13 @@ public class AcademyUtestData {
     private String strmobile;
     private String strmodel;
     private String strsystem;
-    private String strpasword;
+    private String strpassword;
     private String strlanguageuser;
     private String strquestion;
 
     public AcademyUtestData(String strfirstname, String strlastname, String stremailadress, String strmonth, String strday, String stryear,
                             String strcity, String strzip, String strcountry, String strcomputer, String strversion, String strlanguage,
-                            String strmobile, String strmodel, String strsystem, String strpasword, String strlanguageuser, String strquestion) {
+                            String strmobile, String strmodel, String strsystem, String strpassword, String strlanguageuser, String strquestion) {
         this.strfirstname = strfirstname;
         this.strlastname = strlastname;
         this.stremailadress = stremailadress;
@@ -38,7 +38,7 @@ public class AcademyUtestData {
         this.strmobile = strmobile;
         this.strmodel = strmodel;
         this.strsystem = strsystem;
-        this.strpasword = strpasword;
+        this.strpassword = strpassword;
         this.strlanguageuser = strlanguageuser;
         this.strquestion = strquestion;
     }
@@ -164,11 +164,11 @@ public class AcademyUtestData {
     }
 
     public String getStrpasword() {
-        return strpasword;
+        return strpassword;
     }
 
     public void setStrpasword(String strpasword) {
-        this.strpasword = strpasword;
+        this.strpassword = strpasword;
     }
 
     public String getStrlanguageuser() {
